@@ -14,9 +14,8 @@ The template has a boilerplate CMake configuration, so the project can be built 
 CMake project.
 
 ```
-mkdir build && cd build
-cmake ..
-make
+cmake --preset=default
+cmake --build --preset=default
 ```
 
 ### Running tests
@@ -24,6 +23,7 @@ make
 After building, tests can be run via CMake with:
 
 ```
+cd build/
 ctest
 ```
 
